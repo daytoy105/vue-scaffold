@@ -1,0 +1,45 @@
+{
+  "name": "scaffold",
+  "version": "4.0.2",
+  "description": "",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& webpack-dev-server --config webpack.config.js --port 80",
+    "build": "set NODE_ENV=production&& webpack -p --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "zlz",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.22.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.8.3",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^7.0.0",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
