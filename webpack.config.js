@@ -38,7 +38,7 @@ let plugins = [
       },
       styles: {
         name: 'styles',
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         chunks: 'all',
         enforce: true
       }
@@ -46,13 +46,13 @@ let plugins = [
   }),
   new webpack.optimize.RuntimeChunkPlugin({
     name: "manifest"
-  }),
-  //new ExtractTextPlugin("styles.css"),
-  new webpack.DefinePlugin({
-    'process.env': {
-      'NODE_ENV': JSON.stringify(nodeEnv)
-    }
   })
+  //new ExtractTextPlugin("styles.css"),
+  // new webpack.DefinePlugin({
+  //   'process.env': {
+  //     'NODE_ENV': JSON.stringify(nodeEnv)
+  //   }
+  // })
 ]
 let _com = ['manifest', 'vendor', 'styles']
 let entry = {}
@@ -108,7 +108,7 @@ module.exports = {
       'css': 'assets/css',
       'js': 'assets/js',
       'images': 'assets/images',
-      'vue$': 'vue/dist/vue.js',
+      'vue$': 'vue/dist/vue.esm.js',
       'routes': 'routes'
     },
     extensions: ['.js', '.vue']
